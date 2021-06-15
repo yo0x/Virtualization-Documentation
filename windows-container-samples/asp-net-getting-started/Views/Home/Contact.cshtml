@@ -1,5 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Contact";
+    var some = System.Convert.ToString(Environment.GetEnvironmentVariable("JEN_BUILD"));
+
+
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
@@ -12,6 +15,7 @@
 </address>
 
 <address>
+    <h2> >>>>> @some</h2>
     <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
